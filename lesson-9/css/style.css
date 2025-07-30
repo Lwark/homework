@@ -1,0 +1,29 @@
+body {
+    background: #262628;
+}
+
+p {
+    color: #fff;
+    font-size: 200%;
+}
+
+
+.inner {
+    background: #fff;
+    height: 100px;
+    position: fixed;
+    left: 50%;
+    right: 50px;
+    bottom: 100px;
+}
+
+.red {
+    height: 100px;
+    width: 100px;
+    background: #e90a0a;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 50%;
+    left: 10%;
+}
+
