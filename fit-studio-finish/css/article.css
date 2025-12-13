@@ -1,0 +1,140 @@
+.article {
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+.block-2__title {
+    font-size: 36px;
+}
+
+.article__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #535755;
+    margin-bottom: 20px;
+}
+
+.article__text:last-child {
+    margin-bottom: 0px;
+}
+
+.article-mb-1 {
+    margin-bottom: 80px;
+}
+
+.article-mb-2 {
+    margin-bottom: 40px;
+}
+
+.article-decor-wrapper {
+    position: relative;
+}
+
+.article-decor-wrapper-1::before {
+    top: 100px;
+    left: -0;
+}
+
+.article-decor-wrapper-2::before {
+    right: -0;
+    bottom: 136px;
+}
+
+
+.article__img {
+    max-width: 100%;
+    width: 1220px;
+    height: 512px;
+}
+
+.article__item {
+    list-style: inside;
+}
+
+.article__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.article__item::marker {
+    font-size: 22px;
+    color: #3596ed;
+}
+
+.article-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #3596ed;
+    cursor: pointer;
+    -webkit-transition: background .2s;
+    -o-transition: background .2s;
+    transition: background .2s;
+}
+
+.article-play-button:hover {
+    background: #46a9ff; 
+}
+
+.article-play-button:not(:disabled):active {
+    background: #2a75b6; 
+}
+/* ============================== */
+
+@media (width <= 769px) {
+    .article-decor-wrapper::before {
+        display: none;
+    }
+
+    .article-mb-1 {
+        margin-bottom: 60px;
+    }
+
+    .article-title-medium {
+        font-size: 32px;
+    }
+}
+
+@media (width <= 576px) {
+    .article {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .article-title-medium {
+        font-size: 28px;
+    }
+
+    .article-mb-1 {
+        margin-bottom: 40px;
+    }
+
+    .article-mb-2 {
+        margin-bottom: 30px;
+    }
+
+    .article-play-button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .article-play-button img {
+        width: 18px;
+        height: 18px;
+    }
+}
